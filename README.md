@@ -1,0 +1,2 @@
+# Sqlite_Recommended_Impl
+This app shows the recommended Sqlite implementation.   Database table, SQLiteOpenHelper class should be in different class.   Because in future if table schema changes, it is easy to update it.   Also SQLiteOpenHelper should only create and update database.    Actual DataSource  should execute all CURD.   For example:    database = SQLiteOpenHelper.getWritableDatabase();   database.database.insert();   database.database.delete();  database.database.query();   
